@@ -53,7 +53,7 @@ limitations under the License.
 				</title>
 				<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 				<meta name="robots" content="noarchive"/>
-				<link rel="shortcut icon" href="/favicon.ico"/>
+				<link rel="shortcut icon" href="/pja/repos-style/trunk/repos-web/favicon.ico"/>
 				<xsl:call-template name="styletag"/>
 				<!-- repos metadata for use in plugins -->
 				<meta name="repos-service" content="index/" />
