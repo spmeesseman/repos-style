@@ -18,13 +18,13 @@
 // === Print svn log --xml to response ===
 
 // Set the URL to the stylesheet, must be same host or absolute path from root
-$xslt = '/repos-web/view/log.xsl';
+$xslt = '/repos-style/view/log.xsl';
 
 // URL or path to repository, no trailing slash
 // (note that the log viewer may bypass access control)
-$repo = '@@Repository@@';
+$repo = 'file:///repo';
 // For SVNParentPath set $repo to parent and this to true
-$isParent = false;
+$isParent = true;
 
 // limit log length for performance reasons (users should run svn client for more entries)
 $limit = 20;

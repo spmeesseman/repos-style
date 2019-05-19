@@ -31,13 +31,14 @@ limitations under the License.
 
 	<!-- === repos style configuration === -->
 	<!-- static: absolute url to style application -->
-	<xsl:param name="static">/pja/repos-style/trunk/repos-web/</xsl:param>
+	<!--<xsl:param name="static">/pja/repos-style/trunk/repos-web/</xsl:param>-->
+	<xsl:param name="static">/repos-style/</xsl:param>
 	<!-- cssUrl: absolute url to css folder -->
 	<xsl:param name="cssUrl"><xsl:value-of select="$static"/>style/</xsl:param>
 	<!-- logUrl: empty -> no log tool, absolute url -> enable 'history' link. Must allow appended query param -->
 	<xsl:param name="logUrl"><xsl:value-of select="$static"/>open/log/?base=<xsl:value-of select="/svn/index/@base"/>&#38;</xsl:param>
 	<!-- startpage: empty -> standard behaviour, absolute url -> special handling of 'up' from trunk -->
-	<xsl:param name="startpage">/</xsl:param>
+	<xsl:param name="startpage">/repos</xsl:param>
 	<!-- tools: name of recognized top level folders to get css tool-class -->
 	<xsl:param name="tools">/trunk/branches/tags/</xsl:param>
 	<!-- ===== end of configuration ===== -->
@@ -53,7 +54,7 @@ limitations under the License.
 				</title>
 				<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 				<meta name="robots" content="noarchive"/>
-				<link rel="shortcut icon" href="/pja/repos-style/trunk/repos-web/favicon.ico"/>
+				<link rel="shortcut icon" href="/repos-style/favicon.ico"/>
 				<xsl:call-template name="styletag"/>
 				<!-- repos metadata for use in plugins -->
 				<meta name="repos-service" content="index/" />
